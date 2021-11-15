@@ -10,47 +10,56 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+
     <script src="https://kit.fontawesome.com/18a845e219.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main">
 
-    <div class="sidebar " id="web-sidebar">
+    <div class="sidebar" id="web-sidebar">
         <button class="navbar-toggler" data-toggle="collapse" data-target="web-sidebar">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>   
-        <div>
-            <div class="profile">
+    <div>
+    <div class="profile">
             <div class="imgprofile">
                 <img src="img/1.jpg" alt="parisa rashidi">
             </div>
-            </div>
-            <div class="name">
+    </div>
+    <div class="name">
                 <h4>Parisa Rashidi</h4>
                 <h6>University of Florida</h6>
-            </div>
-        </div>
-        <div> 
-           <nav>
-            <ul class="icon">
-                <li><i class="fas fa-home faicon"></i>|<a href="#" class="txicon">Home</a></li>
-                <li><i class="fas fa-flask faicon"></i>|<a href="#"class="txicon">Research</a></li>
-                <li><i class="fas fa-bullseye faicon"></i>|<a href="#"class="txicon">Research Impact</a></li>
-                <li><i class="fas fa-book faicon"></i>|<a href="#"class="txicon">Publications</a></li>
-                <li><i class="fas fa-user-circle faicon"></i>|<a href="#"class="txicon">People</a></li>
-                <li><i class="fas fa-graduation-cap faicon"></i>|<a href="#"class="txicon">Teaching</a></li>
-                <li><i class="fas fa-edit faicon"></i>|<a href="#"class="txicon">Blog</a></li>
-                <li><i class="fas fa-file faicon"></i>|<a href="#" class="txicon">CV</a></li>
-                <li><i class="fas fa-coffee faicon"></i>|<a href="#"class="txicon">Contact</a></li>
+    </div>
+    </div>
+
+
+            <!-- <ul class="icon">
+                <li><i class="fas fa-home faicon"></i><a href="#london" class="txicon tablinks" onclick="openCity(event, 'London')">Home</a></li>
+                <li><i class="fas fa-flask faicon"></i><a href="#"class="txicon">Research</a></li>
+                <li><i class="fas fa-bullseye faicon"></i><a href="#"class="txicon">Research Impact</a></li>
+                <li><i class="fas fa-book faicon"></i><a href="#"class="txicon">Publications</a></li>
+                <li><i class="fas fa-user-circle faicon"></i><a href="#"class="txicon">People</a></li>
+                <li><i class="fas fa-graduation-cap faicon"></i><a href="#"class="txicon">Teaching</a></li>
+                <li><i class="fas fa-edit faicon"></i><a href="#"class="txicon">Blog</a></li>
+                <li><i class="fas fa-file faicon"></i><a href="#" class="txicon">CV</a></li>
+                <li><i class="fas fa-coffee faicon"></i><a href="#"class="txicon">Contact</a></li>
             </ul>
-            </nav>
-        </div>
+            </nav> -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            </div>
+              
+            
+
         <div class="footer-sidebar">
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-orcid"></i></a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="#" class="txicon"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="txicon"><i class="fab fa-orcid"></i></a></li>
+                    <li><a href="#" class="txicon"><i class="fas fa-envelope"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -63,282 +72,297 @@
             Intelligent Health Systems Lab (i-Heal)
             </div>
         </header>
-        <section class="section1 row container">
-            <div class="imgbox col">
-                    <img src="img/1.jpg" >
-            </div>
-            <div class="biography col">
-                <div class="title"><h1>Biography</h1></div>
-                <hr>
-                <P>
-                    <b>Dr. Parisa Rashidi</b> received her PhD in computer science with an
-                    emphasis on machine learning. She is currently an associate professor at
-                    the J. Crayton Pruitt Family Department of Biomedical Engineering
-                    (BME) at University of Florida (UF). She is also affiliated with the
-                    Electrical & Computer Engineering (ECE), as well as Computer &
-                    Information Science & Engineering (CISE) departments. She is the
-                    director of the “Intelligent Health Lab” (i-Heal).  Her research aims to
-                    bridge the gap between machine learning and patient care.
-
-                    Dr. Rashidi is a National Science Foundation (NSF) CAREER awardee, the
-                    National Institute of Health (NIH) Trailblazer Awardee, Herbert
-                    Wertheim College of Engineering (HWCOE) Assistant Professor
-                    Excellence Awardee, and a recipient of the UF term professorship. She is
-                    also a recipient of UF’s Provost excellence award for assistant professors.
-
-                    To date, she has authored 80+ peer-reviewed publications. She has
-                    chaired numerous workshops and symposiums on intelligent health
-                    systems and has served on the program committee of 20+ conferences.
-                    Over the past few years, she has received $10.6M in extramural research
-                    funds with collaborators and $3.05M as an individual investigator. Dr.
-                    Rashidi’s research has been supported by local, state, and federal grants,
-                    including awards from the National Institutes of Health (NIBIB, NCI, and NIGMS) and
-                    the National Science Foundation (NSF).
-                </P>
-            </div>
-            <div class="recentNews col">
-                <div>
-                    <img src="img/2.png">
+        <div id="London" class="tabcontent">
+            <section class="section1 row container">
+  
+                <div class="imgbox col">
+                        <img src="img/1.jpg" class="center">
                 </div>
-                <div>
-                    <h3>Recent News</h3>
+                <div class="biography col">
+                    <div class="title"><h1>Biography</h1></div>
                     <hr>
-                    <nav class="navbox">
-                        <ul>
-                            <li><a href="#">Dr. Rashidi at ISN Virtual World Congress of Nephrology 2021</a></li>
-                            <li><a href="#">Human Activity Recognition Using Inertial, Physiological and Environmental Sensors</a></li>
-                            <li><a href="#">NIH Mitchel Max Award- Finalist</a></li>
-                            <li><a href="#">HWCOE Excellence Award</a></li>
-                            <li><a href="#">Provost Excellence Award</a></li>
-                        </ul>
-                    </nav>
+                    <P>
+                        <b>Dr. Parisa Rashidi</b> received her PhD in computer science with an
+                        emphasis on machine learning. She is currently an associate professor at
+                        the J. Crayton Pruitt Family Department of Biomedical Engineering
+                        (BME) at University of Florida (UF). She is also affiliated with the
+                        Electrical & Computer Engineering (ECE), as well as Computer &
+                        Information Science & Engineering (CISE) departments. She is the
+                        director of the “Intelligent Health Lab” (i-Heal).  Her research aims to
+                        bridge the gap between machine learning and patient care.
+    
+                        Dr. Rashidi is a National Science Foundation (NSF) CAREER awardee, the
+                        National Institute of Health (NIH) Trailblazer Awardee, Herbert
+                        Wertheim College of Engineering (HWCOE) Assistant Professor
+                        Excellence Awardee, and a recipient of the UF term professorship. She is
+                        also a recipient of UF’s Provost excellence award for assistant professors.
+    
+                        To date, she has authored 80+ peer-reviewed publications. She has
+                        chaired numerous workshops and symposiums on intelligent health
+                        systems and has served on the program committee of 20+ conferences.
+                        Over the past few years, she has received $10.6M in extramural research
+                        funds with collaborators and $3.05M as an individual investigator. Dr.
+                        Rashidi’s research has been supported by local, state, and federal grants,
+                        including awards from the National Institutes of Health (NIBIB, NCI, and NIGMS) and
+                        the National Science Foundation (NSF).
+                    </P>
                 </div>
-            </div>
-        </section>
-            <section class="container">
-            <div >
-                <h2 class="title">Featured Publications</h2>
-                <hr>
-                <div class="media">
-                    <img src="img/3.png" class="mr-3">
-                    <div class="media-body">
-                        <h5 class="mt-0">Intelligent ICU for Autonomous Patient Monitoring Using Pervasive Sensing and Deep Learning</h5>
-                        <span class="mediabutton" >Journal Article</span>
-                        <p>Davoudi, Anis, Kumar Rohit Malhotra, Benjamin Shickel, Scott Siegel, Seth Williams, Matthew Ruppert, Emel Bihorac, Tezcan Ozrazgat-Baslanti, Patrick J. Tighe, Azra Bihorac, and Parisa Rashidi
-                        Nature, Scientific Reports, 9, Article number: 8020 (2019).
-                        Publication year: 2019</p>
+                <div class="recentNews col">
+                    <div>
+                        <img src="img/2.png">
+                    </div>
+                    <div>
+                        <h3>Recent News</h3>
+                        <hr>
+                        <nav class="navbox">
+                            <ul>
+                                <li><a href="#">Dr. Rashidi at ISN Virtual World Congress of Nephrology 2021</a></li>
+                                <li><a href="#">Human Activity Recognition Using Inertial, Physiological and Environmental Sensors</a></li>
+                                <li><a href="#">NIH Mitchel Max Award- Finalist</a></li>
+                                <li><a href="#">HWCOE Excellence Award</a></li>
+                                <li><a href="#">Provost Excellence Award</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <hr>
-                <div class="media">
-                    <img src="img/3.png" class="mr-3">
-                    <div class="media-body">
-                       <h5>DeepSOFA: A Continuous Acuity Score for Critically Ill Patients using Clinically Interpretable Deep Learning</h5>
-                        <span class="mediabutton">Journal Article</span>
-                        <p>Benjamin Shickel, Tyler J. Loftus, Lasith Adhikari, Tezcan Ozrazgat-Baslanti, Azra Bihorac & Parisa Rashidi
-                        Nature Scientific Reportsvolume 9, Article number: 1879 (2019)
-                        Publication year: 2019</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="media">
-                    <img src="img/4.jpg" class="mr-3">
-                    <div class="media-body">
-                        <h5>Deep EHR: A Survey of Recent Advances in Deep Learning Techniques for Electronic Health Record (EHR) Analysis</h5>
-                        <span class="mediabutton">Journal Article</span>
-                        <p>Benjamin Shickel, Patrick James Tighe, Azra Bihorac, Parisa Rashidi
-                        IEEE Journal of Biomedical and Health Informatics
-                        Publication year: 2018</p>
-                    </div>
-                </div>
-                <hr>
-            </div>
             </section>
-            <section class="container">
+                <section class="container">
                 <div >
-                    <h2 class="title">Featured Research Projects</h2>
+                    <h2 class="title">Featured Publications</h2>
                     <hr>
                     <div class="media">
-                        <img src="img/5.jpg" class="mr-3">
+                        <img src="img/3.png" class="mr-3">
                         <div class="media-body">
-                            <h3>Intelligent ICU</h3>
+                            <h5 class="mt-0">Intelligent ICU for Autonomous Patient Monitoring Using Pervasive Sensing and Deep Learning</h5>
+                            <span class="mediabutton" >Journal Article</span>
+                            <p>Davoudi, Anis, Kumar Rohit Malhotra, Benjamin Shickel, Scott Siegel, Seth Williams, Matthew Ruppert, Emel Bihorac, Tezcan Ozrazgat-Baslanti, Patrick J. Tighe, Azra Bihorac, and Parisa Rashidi
+                            Nature, Scientific Reports, 9, Article number: 8020 (2019).
+                            Publication year: 2019</p>
                         </div>
                     </div>
                     <hr>
                     <div class="media">
-                        <img src="img/6.jpg" class="mr-3">
+                        <img src="img/3.png" class="mr-3">
                         <div class="media-body">
-                            <h3>Trajectory Prediction in Hospitalized Patients</h3>
-                            Predicting the status of patient throughout their hospital stay
+                           <h5>DeepSOFA: A Continuous Acuity Score for Critically Ill Patients using Clinically Interpretable Deep Learning</h5>
+                            <span class="mediabutton">Journal Article</span>
+                            <p>Benjamin Shickel, Tyler J. Loftus, Lasith Adhikari, Tezcan Ozrazgat-Baslanti, Azra Bihorac & Parisa Rashidi
+                            Nature Scientific Reportsvolume 9, Article number: 1879 (2019)
+                            Publication year: 2019</p>
                         </div>
                     </div>
                     <hr>
                     <div class="media">
-                        <img src="img/7.jpg" class="mr-3">
+                        <img src="img/4.jpg" class="mr-3">
                         <div class="media-body">
-                            <h4>In-Community Health Monitoring</h4>
+                            <h5>Deep EHR: A Survey of Recent Advances in Deep Learning Techniques for Electronic Health Record (EHR) Analysis</h5>
+                            <span class="mediabutton">Journal Article</span>
+                            <p>Benjamin Shickel, Patrick James Tighe, Azra Bihorac, Parisa Rashidi
+                            IEEE Journal of Biomedical and Health Informatics
+                            Publication year: 2018</p>
                         </div>
                     </div>
                     <hr>
                 </div>
                 </section>
-                <div style="text-align: center;">
-                    <a href="#" > Read more about research projects here...</a>
-                </div>
-                <hr>
                 <section class="container">
-                    <div class="title" >
-                        <h1>Honors and Awards</h1>
+                    <div >
+                        <h2 class="title">Featured Research Projects</h2>
+                        <hr>
+                        <div class="media">
+                            <img src="img/5.jpg" class="mr-3">
+                            <div class="media-body">
+                                <h3>Intelligent ICU</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <img src="img/6.jpg" class="mr-3">
+                            <div class="media-body">
+                                <h3>Trajectory Prediction in Hospitalized Patients</h3>
+                                Predicting the status of patient throughout their hospital stay
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <img src="img/7.jpg" class="mr-3">
+                            <div class="media-body">
+                                <h4>In-Community Health Monitoring</h4>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    </section>
+                    <div style="text-align: center;">
+                        <a href="#" > Read more about research projects here...</a>
                     </div>
                     <hr>
-                    <ul class="timeline">
-                        <li>
-                            <div class="date">2019</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">Mitchell Max Award Finalist
-                                    imageMitchell Max Award Finalist, National Institute of Health (NIH)</div>
-                            </div>
-                        </li>
-                        <li>
+                    <section class="container">
+                        <div class="title" >
+                            <h1>Honors and Awards</h1>
+                        </div>
+                        <hr>
+                        <ul class="timeline">
+                            <li>
+                                <div class="date">2019</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">Mitchell Max Award Finalist
+                                        imageMitchell Max Award Finalist, National Institute of Health (NIH)</div>
+                                </div>
+                            </li>
+                            <li>
+                                <li>
+                                    <div class="date">2014</div>
+                                    <div class="circle"></div>
+                                    <div class="data">
+                                        <div class="subject" style="padding-left: 0;">Provost’s Excellence Award for Assistant Professors</div>
+                                    </div>
+                                </li>
+                                <div class="date">2019</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">HWCOE Excellence Award for Assistant Professors</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2019</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">NIH Trailblazer Award</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2018</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">Term Professorship</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2018</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">National Science Foundation Faculty Early Career Development Program (NSF CAREER)</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2017</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">National Academy of Engineering (NAE), Frontiers of Engineering</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2015</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">Biomedical Engineering Society (BMES) Career Development Award</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2015</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">Microsoft Faculty</div>
+                                </div>
+                            </li>
                             <li>
                                 <div class="date">2014</div>
                                 <div class="circle"></div>
                                 <div class="data">
-                                    <div class="subject" style="padding-left: 0;">Provost’s Excellence Award for Assistant Professors</div>
+                                    <div class="subject" style="padding-left: 0;">National Science Foundation Travel Award</div>
                                 </div>
                             </li>
-                            <div class="date">2019</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">HWCOE Excellence Award for Assistant Professors</div>
+                            <li>
+                                <div class="date">2011</div>
+                                <div class="circle"></div>
+                                <div class="data">
+                                    <div class="subject" style="padding-left: 0;">The Outstanding Dissertation Award</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <footer class="container">
+                        <div class="footer row">
+                            <div class="boxleft col">
+                                <div class="title">Education</div>
+                                    <hr>
+                                    <span class="bluebox">PhD</span><span class="greenbox">January 2008 - May 2011</span>
+                                    <div class="shadowbox">
+                                    <p>PhD in Computer Science - Applied Machine Learning
+                                    Washington State University
+                                    </p>
+                                    </div>
+                                    <span class="bluebox">M.Sc.</span><span class="greenbox">September 2006 - December 2007</span>
+                                    <div class="shadowbox">
+                                    <p>M.Sc. in Computer Science - Applied Machine Learning
+                                     Washington State University
+                                    </div>
+                                    <span class="bluebox">B.Sc</span><span class="greenbox">September 2000 - September 2005</span>
+                                    <div class="shadowbox">
+                                    <p>B.Sc. in Computer Engineering
+                                    University of Tehran
+                                    </p>
+                                    </div>
+                                
                             </div>
-                        </li>
-                        <li>
-                            <div class="date">2019</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">NIH Trailblazer Award</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date">2018</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">Term Professorship</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date">2018</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">National Science Foundation Faculty Early Career Development Program (NSF CAREER)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date">2017</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">National Academy of Engineering (NAE), Frontiers of Engineering</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date">2015</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">Biomedical Engineering Society (BMES) Career Development Award</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date">2015</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">Microsoft Faculty</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date">2014</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">National Science Foundation Travel Award</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date">2011</div>
-                            <div class="circle"></div>
-                            <div class="data">
-                                <div class="subject" style="padding-left: 0;">The Outstanding Dissertation Award</div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <footer class="container">
-                    <div class="footer row">
-                        <div class="boxleft col">
-                            <div class="title">Education</div>
+                            <div class="boxright col">
+                                <div class="title">Positions</div>
                                 <hr>
-                                <span class="bluebox">PhD</span><span class="greenbox">January 2008 - May 2011</span>
-                                <div class="shadowbox">
-                                <p>PhD in Computer Science - Applied Machine Learning
-                                Washington State University
-                                </p>
+                                <div class="space">
+                                    <div class="boxtwo"><span  style="display: block;"class="bluebox2">Present</span><span  style="display: block;" class="greenbox2">2020</span></div>
+                                    <div class="boxcaption">
+                                        Associate Professor
+                                        <p style="font-size: 12px;">University of Florida</p>
+                                    </div>
                                 </div>
-                                <span class="bluebox">M.Sc.</span><span class="greenbox">September 2006 - December 2007</span>
-                                <div class="shadowbox">
-                                <p>M.Sc. in Computer Science - Applied Machine Learning
-                                 Washington State University
+                                <div>
+                                    <div class="boxtwo"><span  style="display: block;"class="bluebox2">2020</span><span  style="display: block;" class="greenbox2">August <br>2013</span></div>
+                                    <div class="boxcaption">
+                                        Associate Professor
+                                        <p style="font-size: 12px;">University of Florida, Biomedical Engineering</p>
+                                    </div>
                                 </div>
-                                <span class="bluebox">B.Sc</span><span class="greenbox">September 2000 - September 2005</span>
-                                <div class="shadowbox">
-                                <p>B.Sc. in Computer Engineering
-                                University of Tehran
-                                </p>
+                                <div class="space">
+                                    <div class="boxtwo"><span  style="display: block;"class="bluebox2">Present</span><span  style="display: block;" class="greenbox2">2013</span></div>
+                                    <div class="boxcaption">
+                                        Affiliated Assistant Professor
+                                        <p style="font-size: 12px;">University of Florida, Electrical & Computer Engineering</p>
+                                    </div>
                                 </div>
-                            
+                                <div class="space">
+                                    <div class="boxtwo"><span  style="display: block;"class="bluebox2">Present</span><span  style="display: block;" class="greenbox2">2016</span></div>
+                                    <div class="boxcaption">
+                                        Affiliated Assistant Professor
+                                        <p style="font-size: 12px;">University of Florida, Computer & Information Science</p>
+                                    </div>
+                                </div>
+                                <div class="space">
+                                    <div class="boxtwo"><span  style="display: block;"class="bluebox2">June <br> 2013</span><span  style="display: block;" class="greenbox2">September <br>2012</span></div>
+                                    <div class="boxcaption">
+                                        Assistant Professor
+                                        <p style="font-size: 12px;">Feinberg School of Medicine, Northwestern University</p>
+                                    </div>
+                                </div>
+    
+                                
+                            </div>
                         </div>
-                        <div class="boxright col">
-                            <div class="title">Positions</div>
-                            <hr>
-                            <div class="space">
-                                <div class="boxtwo"><span  style="display: block;"class="bluebox2">Present</span><span  style="display: block;" class="greenbox2">2020</span></div>
-                                <div class="boxcaption">
-                                    Associate Professor
-                                    <p style="font-size: 12px;">University of Florida</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="boxtwo"><span  style="display: block;"class="bluebox2">2020</span><span  style="display: block;" class="greenbox2">August <br>2013</span></div>
-                                <div class="boxcaption">
-                                    Associate Professor
-                                    <p style="font-size: 12px;">University of Florida, Biomedical Engineering</p>
-                                </div>
-                            </div>
-                            <div class="space">
-                                <div class="boxtwo"><span  style="display: block;"class="bluebox2">Present</span><span  style="display: block;" class="greenbox2">2013</span></div>
-                                <div class="boxcaption">
-                                    Affiliated Assistant Professor
-                                    <p style="font-size: 12px;">University of Florida, Electrical & Computer Engineering</p>
-                                </div>
-                            </div>
-                            <div class="space">
-                                <div class="boxtwo"><span  style="display: block;"class="bluebox2">Present</span><span  style="display: block;" class="greenbox2">2016</span></div>
-                                <div class="boxcaption">
-                                    Affiliated Assistant Professor
-                                    <p style="font-size: 12px;">University of Florida, Computer & Information Science</p>
-                                </div>
-                            </div>
-                            <div class="space">
-                                <div class="boxtwo"><span  style="display: block;"class="bluebox2">June <br> 2013</span><span  style="display: block;" class="greenbox2">September <br>2012</span></div>
-                                <div class="boxcaption">
-                                    Assistant Professor
-                                    <p style="font-size: 12px;">Feinberg School of Medicine, Northwestern University</p>
-                                </div>
-                            </div>
+                    </footer>          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div> 
 
-                            
-                        </div>
-                    </div>
-                </footer>
+
+        
         
                 
         

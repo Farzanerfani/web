@@ -30,6 +30,7 @@ body{
     position: fixed;
     display: block;
 }
+
 .profile {
     width: 125px;
     height: 125px;
@@ -59,10 +60,10 @@ body{
 .icon li a{
     color: #fff;
     text-decoration: none;
-    
+
 }
 .icon li{
-    
+
     color: #fff;
     display: block;
     float: none;
@@ -88,10 +89,72 @@ body{
 
 }
 
+
+
+
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #313131;
+  width: 100%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color:#fff;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #363636;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #363636;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 100%;
+  border-left: none;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
 .footer-sidebar li{
     color: #fff;
     display: inline-block;
 text-align: center;}
+.center{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .blog{
 margin-left: 250px;
 }
@@ -110,11 +173,12 @@ margin-left: 250px;
     margin-left: 200px;
 }
 .section1{
+    
     width: 80%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 ;
 }
-.imgbox{
+/* .imgbox{
     width: 25%;
     display: inline-block;
     vertical-align: top;
@@ -134,20 +198,19 @@ margin-left: 250px;
     display: inline-block;
     vertical-align: top;
     margin-top: 60px;
-    margin-left: 20px;
 
-    
-}
+
+} */
 .recentNews div img{
     padding: 50px;
 }
 .recentNews ul{
-    
+
     margin: 0;
     padding: 0;
     list-style: none;
     border-left-color: #0186b2
-    
+
 }
 .imgbox img{
     width: 250px;
@@ -179,7 +242,7 @@ margin-left: 250px;
     width: 110px;
     height: 110px;
     display: inline-block;
-    
+
 }
 .media img{
     width: 160px;
@@ -189,7 +252,7 @@ margin-left: 250px;
 }
 .mediabutton{
     background-color: #428bca;
-    padding: 4px; 
+    padding: 4px;
     border-radius: 3px;
     text-align: center;
     color: #fff;
@@ -221,8 +284,8 @@ list-style-type: none;
     padding: 6px;
     border-radius: 50%;
     display: inline-block;
-    
-    
+
+
 }
 .data{
     border-left: 10px solid #0186b2 ;
@@ -301,6 +364,20 @@ list-style-type: none;
 margin-bottom: 20px;
 margin-top: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 500px){
     .sidebar {
