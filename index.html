@@ -18,9 +18,9 @@
     <div class="main">
 
     <div class="sidebar" id="web-sidebar">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="web-sidebar">
+        <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="web-sidebar">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>   
+        </button>    -->
     <div>
     <div class="profile">
             <div class="imgprofile">
@@ -47,32 +47,39 @@
             </ul>
             </nav> -->
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                <button class="tablinks" onclick="openCity(event, 'home-tab')"><i class="fas fa-home faicon"></i>Home</button>
+                <button class="tablinks" onclick="openCity(event, 'Research-tab')"><i class="fas fa-flask faicon"></i>Research</button>
+                <button class="tablinks" onclick="openCity(event, 'Research-Impact-tab')"><i class="fas fa-bullseye faicon"></i>Research Impact</button>
+                <button class="tablinks" onclick="openCity(event, 'Publications-tab')"><i class="fas fa-book faicon"></i>Publications</button>
+                <button class="tablinks" onclick="openCity(event, 'People-tab')"><i class="fas fa-user-circle faicon"></i>People</button>
+                <button class="tablinks" onclick="openCity(event, 'Teaching-tab')"><i class="fas fa-graduation-cap faicon"></i>Teaching</button>
+                <button class="tablinks" onclick="openCity(event, 'Blog-tab')"><i class="fas fa-edit faicon"></i>Blog</button>
+                <button class="tablinks" onclick="openCity(event, 'CV-tab')"><i class="fas fa-file faicon"></i>CV</button>
+                <button class="tablinks" onclick="openCity(event, 'Contact-tab')"><i class="fas fa-coffee faicon"></i>Contact</button>
             </div>
               
             
 
         <div class="footer-sidebar">
-            <nav>
+            <!-- <nav> -->
                 <ul>
-                    <li><a href="#" class="txicon"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="txicon"><i class="fab fa-orcid"></i></a></li>
-                    <li><a href="#" class="txicon"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="#" class="faicon"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="faicon"><i class="fab fa-orcid"></i></a></li>
+                    <li><a href="#" class="faicon"><i class="fas fa-envelope"></i></a></li>
                 </ul>
-            </nav>
+            <!-- </nav> -->
         </div>
         
 
     </div>
     <div class="blog">
-        <header class=" header">
-            <div class="titr headercontent">
-            Intelligent Health Systems Lab (i-Heal)
-            </div>
-        </header>
-        <div id="London" class="tabcontent">
+
+        <div id="home-tab" class="tabcontent">
+            <header class=" header">
+                <div class="titr headercontent">
+                Intelligent Health Systems Lab (i-Heal)
+                </div>
+            </header>
             <section class="section1 row container">
   
                 <div class="imgbox col">
@@ -351,15 +358,79 @@
                         </div>
                     </footer>          </div>
           
-          <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
+            <div id="Research-tab" class="tabcontent ">
+                <div class="container">
+                  <div class="row researchtab">
+                    <div class="col ">
+                    <h1 style="color: #4b4b4b; text-align: center;">Research</h1>
+                    <hr>
+                    <p>
+                        Parisa Rashidi is the director of the “Intelligent Health Lab” (i-Heal). Her area of research includes developing machine learning and artificial intelligence methods for solving healthcare problems. More specifically, she is working on: (1) transforming patient care in the Intensive Care Unit by developing autonomous monitoring tools using advanced machine learning techniques, (2) Developing intelligent tools for monitoring cognitive and mental conditions of community-dwelling patients. She has forged a highly collaborative research program across campus to address these problems, collaborating with several departments at College of Medicine including nephrology, anesthesiology, clinical neuropsychology, and aging. Her research is supported by National Science Foundation (NSF), National Institute of Health (NIH), state grants, and internal grants.
+                    </p>
+                    <p><a href="#">Google Scholar page</a></p>
+                    </div>
+                    <div class="col ">
+                        <h1 style="color: #4b4b4b; text-align: center;">Interests</h1>
+                        <hr>
+                        <nav class="navbox">
+                            <ul>
+                                <li>Machine Learningy 2021</li>
+                                <li>Natural Language Processing</li>
+                                <li>Intelligent Health Systems</li>
+                                <li>Biomedical Data Science</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <hr>
+                    <div class="row container" >
+                        <div class="col ">
+                        <h2 class="title"> Research Projects</h2>
+                        <hr>
+                        <div class="media">
+                            <img src="img/5.jpg" class="mr-3">
+                            <div class="media-body">
+                                <h3>Intelligent ICU</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <img src="img/6.jpg" class="mr-3">
+                            <div class="media-body">
+                                <h3>Trajectory Prediction in Hospitalized Patients</h3>
+                                Predicting the status of patient throughout their hospital stay
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <img src="img/7.jpg" class="mr-3">
+                            <div class="media-body">
+                                <h4>In-Community Health Monitoring</h4>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    
+                  </div>
+                </div>
           </div>
+          <div id="Research-Impact-tab" class="tabcontent">
+          </div>
+          <div id="Publications-tab" class="tabcontent">
+          </div>
+          <div id="Teaching-tab" class="tabcontent">
+          </div>
+          <div id="Blog-tab" class="tabcontent">
+          </div>
+          <div id="CV-tab" class="tabcontent">
+          </div>
+          <div id="Contact-tab" class="tabcontent">
+          </div>
+
+
+
+
           
-          <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-          </div> 
 
 
         
@@ -369,8 +440,8 @@
 
     </div>
 
-    </div>
-    </div>
+    <!-- </div>
+    </div> -->
 
 </body>
 </html>
