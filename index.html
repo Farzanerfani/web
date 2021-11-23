@@ -7,21 +7,21 @@
     <link href="style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/30a6823b84.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/app.js"></script>
-
     <script src="https://kit.fontawesome.com/18a845e219.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main">
 
+
     <div class="sidebar" id="web-sidebar">
-        <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="web-sidebar">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>    -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="web-sidebar">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>   
+
     <div>
     <div class="profile">
             <div class="imgprofile">
@@ -48,34 +48,38 @@
             </ul>
             </nav> -->
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'home-tab')"><i class="fas fa-home faicon"></i>Home</button>
-                <button class="tablinks" onclick="openCity(event, 'Research-tab')"><i class="fas fa-flask faicon"></i>Research</button>
-                <button class="tablinks" onclick="openCity(event, 'Research-Impact-tab')"><i class="fas fa-bullseye faicon"></i>Research Impact</button>
-                <button class="tablinks" onclick="openCity(event, 'Publications-tab')"><i class="fas fa-book faicon"></i>Publications</button>
-                <button class="tablinks" onclick="openCity(event, 'People-tab')"><i class="fas fa-user-circle faicon"></i>People</button>
-                <button class="tablinks" onclick="openCity(event, 'Teaching-tab')"><i class="fas fa-graduation-cap faicon"></i>Teaching</button>
-                <button class="tablinks" onclick="openCity(event, 'Blog-tab')"><i class="fas fa-edit faicon"></i>Blog</button>
-                <button class="tablinks" onclick="openCity(event, 'CV-tab')"><i class="fas fa-file faicon"></i>CV</button>
-                <button class="tablinks" onclick="openCity(event, 'Contact-tab')"><i class="fas fa-coffee faicon"></i>Contact</button>
+                <button class="tablinks active" onclick="openCity(event, 'home-tab')" aria-selected="true"><i class="fas fa-home faicon"></i> Home</button>
+                <button class="tablinks" onclick="openCity(event, 'Research-tab')" aria-selected="false"><i class="fas fa-flask faicon"></i> Research</button>
+                <button class="tablinks" onclick="openCity(event, 'Research-Impact-tab')" aria-selected="false"><i class="fas fa-bullseye faicon"></i> Research Impact</button>
+                <button class="tablinks" onclick="openCity(event, 'Publications-tab')" aria-selected="false"><i class="fas fa-book faicon"></i> Publications</button>
+                <!-- <button class="tablinks" onclick="openCity(event, 'People-tab')" aria-selected="false"><i class="fas fa-user-circle faicon"></i> People</button> -->
+                <button class="tablinks" onclick="openCity(event, 'Teaching-tab')" aria-selected="false"><i class="fas fa-graduation-cap faicon"></i> Teaching</button>
+                <!-- <button class="tablinks" onclick="openCity(event, 'Blog-tab')" aria-selected="false"><i class="fas fa-edit faicon"></i> Blog</button> -->
+                <button class="tablinks" onclick="openCity(event, 'CV-tab')" aria-selected="false"><i class="fas fa-file faicon"></i> CV</button>
+                <button class="tablinks" onclick="openCity(event, 'Contact-tab')" aria-selected="false"><i class="fas fa-coffee faicon"></i> Contact</button>
             </div>
+
+            
               
             
 
         <div class="footer-sidebar">
-            <!-- <nav> -->
+            <div class="footericon">
                 <ul>
                     <li><a href="#" class="faicon"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="#" class="faicon"><i class="fab fa-orcid"></i></a></li>
                     <li><a href="#" class="faicon"><i class="fas fa-envelope"></i></a></li>
                 </ul>
-            <!-- </nav> -->
+            </div>
+            <p class="footertext">©2018 Parisa Rashidi - All rights reserved</p>   
         </div>
         
 
     </div>
     <div class="blog">
 
-        <div id="home-tab" class="tabcontent">
+        <div id="home-tab" class="tabcontent active">
+            
             <header class=" header">
                 <div class="titr headercontent">
                 Intelligent Health Systems Lab (i-Heal)
@@ -357,7 +361,8 @@
                                 
                             </div>
                         </div>
-                    </footer>          </div>
+                    </footer>          
+                </div>
           
             <div id="Research-tab" class="tabcontent ">
                 <div class="container">
@@ -417,11 +422,12 @@
           </div>
           <div id="Research-Impact-tab" class="tabcontent">
                 <div class="container">
-                    <div>
-                    <h1>Research Impact</h1>
-                    </div>
+                    <div class="impact">
+                    <p>Research Impact</p>
                     <hr>
-                    <div>
+
+                    </div>
+                    <div class="title">
                     <h1>Impact of Selected Publications</h1>
                     </div>
                     <hr>
@@ -430,9 +436,11 @@
                           <div class="card ">
                               <h3>2019</h3>
                               <p>
+                                <h6>
                                 Shickel, Benjamin, Tyler J. Loftus, Tezcan Ozrazgat-Baslanti, Ashkan Ebadi, Azra Bihorac, and Parisa Rashidi. “DeepSOFA: A Real-Time Continuous Acuity Score Framework using Deep Learning.” Nature Scientific Reports, Vol. 9, No. 1879, 2019.
 
                                 In the top 5% of all research outputs scored by Altmetric. 
+                                </h6>
                               </p>
                           </div>
                         </div>
@@ -440,9 +448,11 @@
                             <div class="card ">
                                 <h3>2019</h3>
                                 <p>
+                                <h6>
                                   Shickel, Benjamin, Tyler J. Loftus, Tezcan Ozrazgat-Baslanti, Ashkan Ebadi, Azra Bihorac, and Parisa Rashidi. “DeepSOFA: A Real-Time Continuous Acuity Score Framework using Deep Learning.” Nature Scientific Reports, Vol. 9, No. 1879, 2019.
   
                                   In the top 5% of all research outputs scored by Altmetric. 
+                                </h6>
                                 </p>
                             </div>
                           </div>
@@ -450,9 +460,11 @@
                             <div class="card ">
                                 <h3>2019</h3>
                                 <p>
+                                <h6>
                                   Shickel, Benjamin, Tyler J. Loftus, Tezcan Ozrazgat-Baslanti, Ashkan Ebadi, Azra Bihorac, and Parisa Rashidi. “DeepSOFA: A Real-Time Continuous Acuity Score Framework using Deep Learning.” Nature Scientific Reports, Vol. 9, No. 1879, 2019.
   
                                   In the top 5% of all research outputs scored by Altmetric. 
+                                </h6>
                                 </p>
                             </div>
                           </div>
@@ -460,9 +472,11 @@
                             <div class="card ">
                                 <h3>2019</h3>
                                 <p>
+                                <h6>
                                   Shickel, Benjamin, Tyler J. Loftus, Tezcan Ozrazgat-Baslanti, Ashkan Ebadi, Azra Bihorac, and Parisa Rashidi. “DeepSOFA: A Real-Time Continuous Acuity Score Framework using Deep Learning.” Nature Scientific Reports, Vol. 9, No. 1879, 2019.
   
                                   In the top 5% of all research outputs scored by Altmetric. 
+                                </h6>
                                 </p>
                             </div>
                           </div>
@@ -472,8 +486,10 @@
           <div id="Publications-tab" class="tabcontent">
               <div class="container">
                   <div>
+                    <div class="impact">
                   <h1>Publications</h1>
                   <hr>
+                  </div>
                   <div class="card mb-3" style="max-width: 100%;">
                     <div class="row g-0">
                       <div class="col-md-4">
@@ -529,10 +545,107 @@
               </div>
           </div>
           <div id="Teaching-tab" class="tabcontent">
+              <div class="container">
+                <div class="impact">
+                    <p>Teaching</p>
+                    <hr>
+                </div>
+                <p>I have been teaching undergraduate and graduate level courses since 2011.</p>
+
+                <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <span class="greenbox">Spring 2018</span>
+                    <br>
+                    <br>
+                    <p>BME3053C: Computer Applications for BME</p>
+                    <p>Undergraduate course . It is a computer programming lab and lecture utilizes Matlab to analyze biomedical measurements.</p>
+                </div>
+                <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <span class="greenbox">Spring 2017</span>
+                    <br>
+                    <br>
+                    <p>BME4760: Biomedical Data Science</p>
+                    <p>Undergraduate course. It covers the biomedical applications of data science techniques, whic include pre-processing techniques, machine learning data analysis, and data visualization techniques..</p>
+                </div>
+                <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <span class="greenbox">Fall 2016</span>
+                    <br>
+                    <br>
+                    <p>BME3053C: Computer Applications for BME</p>
+                    <p>Undergraduate course . It is a computer programming lab and lecture utilizes Matlab to analyze biomedical measurements.</p>
+                </div>
+              </div>
           </div>
-          <div id="Blog-tab" class="tabcontent">
-          </div>
+          <!-- <div id="Blog-tab" class="tabcontent">
+          </div> -->
           <div id="CV-tab" class="tabcontent">
+                <div id="inner-nav"></div>
+                <div id="container">
+                    <div id="profile">
+                        <div id="image">
+                            <img id="profile-photo" src="img/1.jpg" alt="Profile-Image">
+                            <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
+                        </div>
+                        <p id="name">Parisa Rashidi<br><span id="email">parisa%2Erashidi@ufl.edu</span></p>
+                        <p id="designation">Assistant Professor<br><span id="college">Motilal Nehru National Institute of Technology, Allahabad, Prayagraj, India</span></p>
+                        <div id="social-links"><a href="#"><i class="fab fa-facebook-f stroke-transparent"></i></a><a><i class="fab fa-twitter stroke-transparent"></i></a><a><i class="fab fa-linkedin-in stroke-transparent"></i></a><a><i class="fab fa-github stroke-transparent"></i></a></div>
+                        <a id="edit-intro" href="#"><i class="fas fa-pen-alt blue"></i>&nbsp;&nbsp;Edit Intro</a>
+                        <hr width="100%">
+                        <div id="about">
+                            <p style="display:inline;">About</p>
+                            <a href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                        </div>
+                        <p id="year-graduation">Expected Year of Graduation<br><strong>March, 2014</strong></p>
+                        <p id="education">Education<br><strong>Doctorate, Indian Institute of Information Technology-Allahabad</strong></p>
+                        <p id="more-about">More about me<br><span>DUGC of Computer Science & Engineering Department</span></p>
+                        <p id="telephone">Telephone<br><strong>0532-2271351</strong></p>
+                        <p id="fax">Fax<br><strong>+91-532-25453441</strong></p>
+                    </div>
+                    <div id="info-cards">
+                        <div class="card">
+                            <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</p>
+                        </div>
+                        <div class="card">
+                            <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Workshop</p>
+                            <ul>
+                                <li><p class="tags">5 th IEEE Conference on Wireless Communication and Sensor Networks<br><span>IIIT-Allahabad | <span>2010</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">Microsoft Theory Day<br><span>IISc Bangalore | <span>2012</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">Microsoft Research India 2012 Summer School on Distributed Algorithms, Systems and Programming<br><span>IISc Bangalore | <span>2012</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">IEEE workshop on Cyber security<br><span>DAIICT Gandhi Nagar | <span>Nov, 2013</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">Author workshop jointly organized by Central Library<br><span>MNNIT Allahabad & Springer (India) Pvt. Ltd New Delhi | <span>29th October, 2015</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">Workshop for Computer Science Teachers<br><span>IIT Kanpur | <span>July, 2014</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">15th International Conference on Cryptology INDOCRYPT<br><span> | <span>2014</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Education</p>
+                            <ul>
+                                <li><p class="tags">Indian Institute of Information Technology-Allahabad<br><span>Secure Mobile Agent Based Communication for Real Time Applications, Doctorate | <span>March, 2014</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">Indian Institute of Information Technology-Allahabad<br><span>Information Security, MS | <span>1994-1996</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                                <li><p class="tags">Institute of Engineering and Rural Technology, U.P.T.U. Allahabad<br><span>Computer Science & Engineering, B.Tech | <span>1988-1992</span></span></p>
+                                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            
+
+
+
+
+
+
+
+
           </div>
           <div id="Contact-tab" class="tabcontent">
               <div class="container">
@@ -542,10 +655,10 @@
     <!--Section heading-->
     <h2 class="section-heading h1 pt-4">Contact us</h2>
     <!--Section description-->
-    <p class="section-description pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+    <!-- <p class="section-description pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
       amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
-      pariatur accusamus veniam.</p>
-  
+      pariatur accusamus veniam.</p> -->
+    <hr>
     <div class="row">
   
       <!--Grid column-->
@@ -656,6 +769,9 @@
 
     <!-- </div>
     </div> -->
+
+
+    
 
 </body>
 </html>
